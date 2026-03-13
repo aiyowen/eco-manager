@@ -51,12 +51,26 @@ const ParkService: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">园区服务平台</h2>
-        <p className="text-gray-600">
-          面向园区生态环境管理部门提供环境监管支持服务，包括环境质量监控预警、污染源精细化管理、
-          环境执法辅助、应急指挥调度等功能。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-blue-400 to-cyan-500">
+          <img 
+            src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c08?w=1200&h=400&fit=crop" 
+            alt="园区服务平台" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">园区服务平台</h2>
+            <p className="text-white/90 text-sm">
+              面向园区生态环境管理部门提供环境监管支持服务
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            包括环境质量监控预警、污染源精细化管理、环境执法辅助、应急指挥调度等功能。
+          </p>
+        </div>
       </div>
 
       {/* 标签页导航 */}

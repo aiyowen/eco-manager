@@ -36,11 +36,26 @@ const SystemManagement: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">系统管理</h2>
-        <p className="text-gray-600">
-          提供用户管理、角色管理、系统设置和日志管理功能，确保系统的安全运行。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-slate-400 to-gray-500">
+          <img 
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop" 
+            alt="系统管理" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">系统管理</h2>
+            <p className="text-white/90 text-sm">
+              提供用户管理、角色管理、系统设置和日志管理功能
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            确保系统的安全运行。
+          </p>
+        </div>
       </div>
 
       {/* 标签页导航 */}

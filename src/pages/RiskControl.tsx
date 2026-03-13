@@ -20,12 +20,26 @@ const RiskControl: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">风险防控</h2>
-        <p className="text-gray-600">
-          提供环境风险预警和环境应急响应功能，建立分级分类的预警指标体系，
-          实现环境风险的及时预警和应急响应的快速处置。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-red-400 to-orange-500">
+          <img 
+            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&h=400&fit=crop" 
+            alt="风险防控" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">风险防控</h2>
+            <p className="text-white/90 text-sm">
+              提供环境风险预警和环境应急响应功能
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            建立分级分类的预警指标体系，实现环境风险的及时预警和应急响应的快速处置。
+          </p>
+        </div>
       </div>
 
       {/* 标签页导航 */}

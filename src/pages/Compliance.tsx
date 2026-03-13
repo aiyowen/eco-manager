@@ -40,12 +40,26 @@ const Compliance: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">合规保障</h2>
-        <p className="text-gray-600">
-          提供环境数据智能采集、污染源全生命周期管理、环保合规智能诊断、智能报告自动生成、
-          非现场监管对接和可视化管理等功能，确保企业环保合规。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-emerald-400 to-teal-500">
+          <img 
+            src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=1200&h=400&fit=crop" 
+            alt="合规保障" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">合规保障</h2>
+            <p className="text-white/90 text-sm">
+              提供环境数据智能采集、污染源全生命周期管理等功能
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            包括环保合规智能诊断、智能报告自动生成、非现场监管对接和可视化管理等功能，确保企业环保合规。
+          </p>
+        </div>
       </div>
 
       {/* 标签页导航 */}

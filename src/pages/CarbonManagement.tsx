@@ -34,11 +34,26 @@ const CarbonManagement: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">双碳管理</h2>
-        <p className="text-gray-600">
-          提供碳排放精准核算、减排路径优化和碳资产化管理功能，帮助企业实现碳达峰碳中和目标。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-green-400 to-emerald-500">
+          <img 
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=400&fit=crop" 
+            alt="双碳管理" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">双碳管理</h2>
+            <p className="text-white/90 text-sm">
+              提供碳排放精准核算、减排路径优化和碳资产化管理功能
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            帮助企业实现碳达峰碳中和目标。
+          </p>
+        </div>
       </div>
 
       {/* 标签页导航 */}

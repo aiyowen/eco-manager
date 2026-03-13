@@ -84,13 +84,27 @@ const Home: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* 平台概览 */}
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">平台概览</h2>
-        <p className="text-gray-600">
-          环保管家智慧平台采用"1+2+3+N"总体架构体系，以统一数据底座为基础，
-          构建园区服务平台和企业服务平台两大核心平台，利用物联网、大数据、人工智能三大技术支撑，
-          实现N个应用场景的智能管理。
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-r from-green-400 to-blue-500">
+          <img 
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=400&fit=crop" 
+            alt="环保平台概览" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h2 className="text-3xl font-bold text-white mb-2">平台概览</h2>
+            <p className="text-white/90 text-sm">
+              环保管家智慧平台采用"1+2+3+N"总体架构体系
+            </p>
+          </div>
+        </div>
+        <div className="p-6">
+          <p className="text-gray-600">
+            以统一数据底座为基础，构建园区服务平台和企业服务平台两大核心平台，
+            利用物联网、大数据、人工智能三大技术支撑，实现N个应用场景的智能管理。
+          </p>
+        </div>
       </div>
 
       {/* 实时监测数据 */}
